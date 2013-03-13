@@ -1,17 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<head>
-	<title>World's Columbian Exposition Quiz</title>
-	<link rel="stylesheet" type="text/css" href="css/jQuizMe.css"/>
-</head>
-<body>
-	<div id="quizArea"/>
+$(document).ready(function () {
 
-<script type="text/javascript" src = "js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/jQuizMe-2.2.1.js"></script>
 
-<!-- <h1>Quiz</h1> -->
-<script type="text/javascript">
 $( function($){
 	var undefVar, answerInfo = ["It was during this vocal competition between cities that Chicago was dubbed 'The Windy City' by Charles A. Dana, editor of the New York Sun."],
 	// ["The fair was built in an amazing three years."]
@@ -75,6 +64,6 @@ $( function($){
 	};
 	$("#quizArea").jQuizMe(quiz, options);
 });
-</script>
-</body>
-</html>
+
+
+}); //end document ready

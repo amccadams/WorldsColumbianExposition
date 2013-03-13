@@ -5,7 +5,7 @@
 * @date 10/09/2012
 */	
 .quiz-el{
-	background: gray;
+	background: black;
 	font-size: 1.1em;
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 	position: relative;
@@ -20,7 +20,7 @@
 }
 /* .q-innerArea = .q-header, .q-help, .q-prob, .q-intro, .q-gameOver */
 .q-innerArea{
-	background: #ffdd77;
+	background: gray;
 	position:relative;
 	clear: both;
 	color: black;
