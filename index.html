@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/jQuizMe.css"/>
-
+<link rel="stylesheet" type="text/css" href="css/highslide.css"/>
   </head>
   <body>
 <div class ="container-fluid">
@@ -77,23 +77,28 @@
 <div class = "span2">
  <h2>Architecture</h2>
  
- <div class="container">    
-<div id="example" class="modal hide fade in" style="display: none; ">  
-<div class="modal-header">  
-<a class="close" data-dismiss="modal">×</a>  
-<h3>This is a Modal Heading</h3>  
-</div>  
-<div class="modal-body">  
-<h4>Text in a modal</h4>  
-<p>You can add some text here.</p>                
-</div>  
-<div class="modal-footer">  
-<a href="#" class="btn btn-success">Call to action</a>  
-<a href="#" class="btn" data-dismiss="modal">Close</a>  
-</div>  
-</div>  
-<p><a data-toggle="modal" href= "#example"  class="btn btn-primary btn-large">Launch demo modal</a></p>  
-</div> 
+ <div class="highslide-gallery" style="width: 600px; margin: auto">
+<!--
+  4) This is how you mark up the thumbnail images with an anchor tag around it.
+  The anchor's href attribute defines the URL of the full-size image. Given the captionEval
+  option is set to 'this.img.alt', the caption is grabbed from the alt attribute of
+  the thumbnail image.
+-->
+  <a class='highslide' href='images/thumbstrip01.jpg' onclick="return hs.expand(this)">
+    <img src='images/thumbstrip01.thumb.png' alt='Mountain valley'/></a>
+
+  <a class='highslide' href='images/thumbstrip02.jpg' onclick="return hs.expand(this)">
+    <img src='images/thumbstrip02.thumb.png' alt='Windy landscape'/></a>
+
+  <a class='highslide' href='images/thumbstrip03.jpg' onclick="return hs.expand(this)">
+    <img src='images/thumbstrip03.thumb.png' alt='Sunset in the mountain'/></a>
+
+  <a class='highslide' href='images/thumbstrip04.jpg' onclick="return hs.expand(this)">
+    <img src='images/thumbstrip04.thumb.png' alt='Resting skier'/></a>
+
+  <a class='highslide' href='images/thumbstrip05.jpg' onclick="return hs.expand(this)">
+    <img src='images/thumbstrip05.thumb.png' alt='Contemplating dog'/></a>
+</div>
   </div>
   
 
@@ -230,7 +235,9 @@
 <script src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/jQuizMe-2.2.1.js"></script>
 <script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-modal.js"></script> 
+<script type="text/javascript" src="js/highslide-full.js"></script>
 <script type="text/javascript" src="js/wce.js"></script>
+
 
 
     </body>
