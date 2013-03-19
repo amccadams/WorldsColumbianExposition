@@ -97,20 +97,20 @@ hs.addSlideshow({
 });
 
 //// Replace main content ////
-// $("#history-button").on("click", function(){
-// 		$("#historyContent").show();
-// 		console.log('meow');
-// });
+$("#history-button").on("click", function(){
+		$("#historyContent").show();
+		console.log('meow');
+});
 
-// $("#quiz-button").on("click", function(){
-// 		$("#quizContent").show();
-// 		console.log('meow');
-// });
+$("#quiz-button").on("click", function(){
+		$("#quizContent").show();
+		console.log('meow');
+});
 
-// $("#map-button").on("click", function(){
-// 		$("#mapContent").show();
-// 		console.log('meow');
-// });
+$("#map-button").on("click", function(){
+		$("#mapContent").show();
+		console.log('meow');
+});
 ///Make "hidden" work in bootstrap-responsive///
 
 
@@ -135,27 +135,21 @@ hs.addSlideshow({
 //     }
 // });
 
-// $(function() {
-// 		$('history-button').click(function(){
-// 			$('#imgBookCover').replaceWith
-// 		})
-// }
+$(function() {
+		$('history-button').click(function(){
+			$('#imgBookCover').replaceWith
+		})
+}
 
 $(function() {
     $('#history-button').click(function() {
-       $('#historyContent.hidden').removeClass('hidden');
-       $('#image1').replaceWith($('div#historyContent')); 
+    
+       $('#historyContent.hidden').hide().fadeIn().removeClass('hidden'); 
     });
 });
-
 $(function() {
     $('#quiz-button').click(function() {
-    	$('#quizContent.hidden').removeClass('hidden');
-    	$('#image1').replaceWith($('div#quizContent'));
-    	 
-    	
-    	console.log('meow');
-      
+       $('#quizContent.hidden').removeClass('hidden'); 
     });
 });
 

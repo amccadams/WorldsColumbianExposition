@@ -227,7 +227,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-image: url('../img/seamlesstexture5_500.jpg');
 }
 
 a {
@@ -739,10 +739,14 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: inherit;
-  font-weight: bold;
+  font-family: 'Sail', cursive;
+  /*font-family: 'Playfair Display', serif;
+  font-family: 'IM Fell Double Pica', serif;
+  font-family: 'IM Fell Great Primer SC', serif;
+  /*font-weight: bold;*/*/
   line-height: 20px;
-  color: inherit;
+  /*color: inherit;*/
+  color: brown;
   text-rendering: optimizelegibility;
 }
 
@@ -6114,8 +6118,8 @@ a.badge:focus {
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+  color: brown;
+  background-image: url('../img/seamlesstexture5_500.jpg');
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -6156,3 +6160,16 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+
+//////stuff I added//////
+
+/*.hide {
+  display: none;
+}
+.hideagain{
+  display: none;
+}
+.hidemore {
+  display: none;
+}
+*/
