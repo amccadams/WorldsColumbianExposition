@@ -30,7 +30,7 @@
 			$("<input type='button'/>").addClass( "q-review-btn q-reviewBar-btns" ),
 			$("<div/>").addClass( "q-reviewBar q-innerArea").append(
 				$("<input type='button'/>").attr({ "class": "q-leftArrow q-review-arrows", "value": "<-" }),
-				$("<input type='button'/>").attr({ "class": "q-rightArrow q-review-arrows", "value": "->" }),
+				$("<input type='button'/>").attr({ "class": "q-rightArrow q-review-arrows", "value": "go" }),
 				$( "<span/>" ).addClass( "q-review-nav" ).append(
 					$("<select/>").addClass( "q-review-index-all q-review-index"),
 					$("<select/>").addClass( "q-review-index-missed q-review-index").hide(),

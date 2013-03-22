@@ -141,30 +141,95 @@ hs.addSlideshow({
 // 		})
 // }
 
+// $(function() {
+//     $('#history-button').click(function() {
+//        $('#historyContent.hidden').fadeIn().removeClass('hidden');
+//        $('.content').hide();
+//        $('#image1').replaceWith($('div#historyContent')); 
+//        $('#historyContent').show();
+//     });
+// });
+
+//$(function() {
+//$(".btn").click(function(){
+	//var item = $(this.attr("#historyContent");
+	// var content = $("p").html("#historyParagraph");
+	//$(".featureContainer").html(".content");
+	//})
+//}
+
 $(function() {
-    $('#history-button').click(function() {
-       $('#historyContent.hidden').removeClass('hidden');
-       $('#image1').replaceWith($('div#historyContent')); 
+	$(".btn").click(function() {
+		("#historyParagraph").hide();
+		$("#historyParagraph").hover(
+			function() {
+				$(this).last().show();
+			},
+			function() {
+				$(this).last().hide();
+			}
+			)
+	});
+});
+
+$(function() {
+    $('#photo-button').click(function() {
+       $('#photoContent.hidden').fadeIn().removeClass('hidden');
+       // $('.content').hide();
+       $('#image1').replaceWith($('div#photoContent')); 
+       $('#photoContent').show();
     });
 });
 
 $(function() {
     $('#quiz-button').click(function() {
-    	$('#quizContent.hidden').removeClass('hidden');
+    	$('#quizContent.hidden').fadeIn().removeClass('hidden');
+    	$('.content').hide();
     	$('#image1').replaceWith($('div#quizContent'));
-    	 
-    	
-    	console.log('meow');
-      
+    	$('#historyContent').show();
     });
 });
 
-// $(function() {
-//     $('#map-button').click(function() {
-//        $('.hidden').css('visibility','visible').hide().fadeIn().removeClass('hidden'); 
-//     });
+$(function() {
+    $('#map-button').click(function() {
+       $('#mapContent.hidden').fadeIn().removeClass('hidden');
+       $('.content').hide();
+    	$('#image1').replaceWith($('div#mapContent')); 
+    	$('#mapContent').show();
+    });
+});
+
+// $('#history-button').on('click', function(){
+//     $('.content').hide();
+//     $('#historyContent').show();
+// });
+// $('#map-button').on('click', function(){
+//     $('.content').hide();
+//     $('#mapContent').show();
+// });
+// $('#photo-button').on('click', function(){
+//     $('.content').hide();
+//     $('#photoContent').show();
+// });
+// $('#quiz-button').on('click', function(){
+//     $('.content').hide();
+//     $('#quizContent').show();
 // });
 
 /////mapster javascript/////
- $('img').mapster();
+
+$('img').mapster({
+
+fillOpacity: 0.4,
+        fillColor: "000000",
+        stroke: true,
+        strokeColor: "ffffff",
+        strokeOpacity: 0.8,
+        strokeWidth: 2,
+
+  // mapKey: 'building'
+   });
+      
+
+
 }); //end document ready

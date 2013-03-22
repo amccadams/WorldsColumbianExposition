@@ -12,137 +12,178 @@
 <link href="css/styles.css" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="css/jQuizMe.css"/>
+<link rel="stylesheet" type="text/css" href="css/joyride-2.0.3.css"/>
+
 <link rel="stylesheet" type="text/css" href="css/highslide.css"/>
 <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|IM+Fell+Double+Pica:400italic|IM+Fell+Great+Primer+SC' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Sail' rel='stylesheet' type='text/css'>
   </head>
+
+
   <body>
 <div class ="container-fluid">
  <div class="hero-unit">
   <div class ="row-fluid">
     <div class ="span12">
+      <div class ="span2"></div>
+      <div class ="span8">
  <h1>World's Columbian Exposition</h1></br>
- <ul class="nav nav-pills">
-  <li class="active">
-    <a href="#"  id ="history-button" value="History of the White City">History of the White City</a>
-    
-  </li>
- <li class="active"><a href="#">Take an Interactive Tour</a></li>
 
-<li class="active">
-    <a href="#"  id ="quiz-button" value="Quiz">Quiz</a>
+ <div class="btn-group">
+  <button class ='btn'>
+ <!--  <li class="active"> -->
+    <a href="#historyContent"  id ="history-button" value="History of the White City">History of the White City</a></button>
     
-  </li>
-</ul>
+ 
+<button class ='btn'>
+    <a href="#"  id ="photo-button" value="Photo Gallery">Photo Gallery</a></button>
+    
+<button class ='btn'>
+<a href="#" id ="map-button" value ="map">Take an Interactive Tour</a></button>
+
+
+<button class ='btn'>
+<a href="#"  id ="quiz-button" value="Quiz">Quiz</a>
+    
+</button>
+</div>
+
   </div>
   </div>
+</div>
+  <div class ="span2"></div>
 </div> <!--herounit end-->
   
   <div class ="row-fluid">
-    <div class ="span12">
+    <div class ="span2"></div>
+    <div class ="span10">
       <div class = "featureContainer">
       <img id ="image1" src = "img/slider_template_wce.png" alt="slider_template"/>
        </div>
-      <div id ="historyContent" class="hidden">
-        
+      <div id ="historyContent" class="hidden content">
+<div class ="span5">
         <div class="page-header">
-  <h2>History of the White City <small>Subtext for header</small></h2>
-  <p>The World's Columbian Exposition (the official shortened name for the World's Fair: Columbian Exposition,[1] also known as The Chicago World's Fair) was a World's Fair held in Chicago in 1893 to celebrate the 400th anniversary of Christopher Columbus' arrival in the New World in 1492. Chicago bested New York City; Washington, D.C.; and St. Louis for the honor of hosting the fair. The fair had a profound effect on architecture, the arts, Chicago's self-image, and American industrial optimism. The Chicago Columbian Exposition was, in large part, designed by Daniel Burnham and Frederick Law Olmsted. It was the prototype of what Burnham and his colleagues thought a city should be. It was designed to follow Beaux Arts principles of design, namely French neoclassical architecture principles based on symmetry, balance, and splendor.
-The exposition covered more than 600 acres (2.4 km2), featuring nearly 200 new (but purposely temporary) buildings of predominantly neoclassical architecture, canals and lagoons, and people and cultures from around the world. More than 27 million people attended the exposition during its six-month run. Its scale and grandeur far exceeded the other world fairs, and it became a symbol of the emerging American Exceptionalism, much in the same way that the Great Exhibition became a symbol of the Victorian era United Kingdom.
+  <h2>History of the White City </h2>
+  </div>
+  <p id ="historyParagraph">The World's Columbian Exposition (the official shortened name for the World's Fair: Columbian Exposition,[1] also known as The Chicago World's Fair) was a World's Fair held in Chicago in 1893 to celebrate the 400th anniversary of Christopher Columbus' arrival in the New World in 1492. Chicago bested New York City; Washington, D.C.; and St. Louis for the honor of hosting the fair. The fair had a profound effect on architecture, the arts, Chicago's self-image, and American industrial optimism. The Chicago Columbian Exposition was, in large part, designed by Daniel Burnham and Frederick Law Olmsted. It was the prototype of what Burnham and his colleagues thought a city should be. It was designed to follow Beaux Arts principles of design, namely French neoclassical architecture principles based on symmetry, balance, and splendor.<br>
+The exposition covered more than 600 acres (2.4 km2), featuring nearly 200 new (but purposely temporary) buildings of predominantly neoclassical architecture, canals and lagoons, and people and cultures from around the world. More than 27 million people attended the exposition during its six-month run. Its scale and grandeur far exceeded the other world fairs, and it became a symbol of the emerging American Exceptionalism, much in the same way that the Great Exhibition became a symbol of the Victorian era United Kingdom.<br>
 Dedication ceremonies for the fair were held on October 21, 1892, but the fairgrounds were not actually opened to the public until May 1, 1893. The fair continued until October 30, 1893. In addition to recognizing the 400th anniversary of the discovery of the New World by Europeans, the fair also served to show the world that Chicago had risen from the ashes of the Great Chicago Fire, which had destroyed much of the city in 1871. On October 9, 1893, the day designated as Chicago Day, the fair set a world record for outdoor event attendance, drawing 716,881 persons to the fair.
-Many prominent civic, professional, and commercial leaders from around the United States participated in the financing, coordination, and management of the Fair, including Chicago shoe tycoon Charles H. Schwab, Chicago railroad and manufacturing magnate John Whitfield Bunn, and Connecticut banking, insurance, and iron products magnate Milo Barnum Richardson, among many others.[2]
+Many prominent civic, professional, and commercial leaders from around the United States participated in the financing, coordination, and management of the Fair, including Chicago shoe tycoon Charles H. Schwab, Chicago railroad and manufacturing magnate John Whitfield Bunn, and Connecticut banking, insurance, and iron products magnate Milo Barnum Richardson, among many others.[2]<br>
 The exposition was such a major event in Chicago that one of the stars on the municipal flag honors it.[3]</p>
 </div>
+
+<div class = "span7">
+  <div class="page-header">
+  <h2>Another feature can go here <small>Perhaps a time line</small></h2>
+</div>
+  
+      </div> 
+<div id ="photoContent" class ="hidden content">
+ 
+         <div class = "span12">
+          <div class="highslide-gallery" style="width: 960px; margin: auto">
+
+ <!--  4) This is how you mark up the thumbnail images with an anchor tag around it.
+  The anchor's href attribute defines the URL of the full-size image. Given the captionEval
+  option is set to 'this.img.alt', the caption is grabbed from the alt attribute of
+  the thumbnail image. -->
+  
+   <a class='highslide' href='img/gallery/artPalace.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/artPalace_thum.jpg' alt='Art Palace'/></a> 
+    
+    <a class='highslide' href='img/gallery/vieFromFisheries.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/vieFromFisheries_thum.jpg' alt='View from Fisheries'/>
+
+  <a class='highslide' href='img/gallery/EastLagoon.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/EastLagoon_thum.jpg' alt='East Lagoon'/>
+
+    <a class='highslide' href='img/gallery/Electricity.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/Electricity_thum.jpg' alt='Electricity Building'/>
+
+    <a class='highslide' href='img/gallery/entrance.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/entrance_thum.jpg' alt='Entrance'/>
+
+    <a class='highslide' href='img/gallery/fairgrounds.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/fairgrounds_thum.jpg' alt='Fairgrounds'/>
+
+    <a class='highslide' href='img/gallery/ferriswheel2.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/ferriswheel2_thum.jpg' alt='Ferris Wheel'/>
+
+    <a class='highslide' href='img/gallery/FisheriesBuilding.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/FisheriesBuilding_thum.jpg' alt='Fisheries Building'/>
+
+    <a class='highslide' href='img/gallery/ho_o_den.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/ho_o_den_thum.jpg' alt='Ho O Den on Wooded Isle'/>
+
+    <a class='highslide' href='img/gallery/interior.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/interior_thum.jpg' alt='Interior'/>
+
+    <a class='highslide' href='img/gallery/midway.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/midway_thum.jpg' alt='Midway'/>
+
+    <a class='highslide' href='img/gallery/overlook.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/overlook_thum.jpg' alt='Overlook'/>
+
+    <a class='highslide' href='img/gallery/SouthBasin.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/SouthBasin_thum.jpg' alt='South Basin'/>
+
+    <a class='highslide' href='img/gallery/transportationBuilding.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/transportationBuilding_thum.jpg' alt='Transportation Building'/>
+
+    <a class='highslide' href='img/gallery/ViewOfGrandBasin.jpg' onclick="return hs.expand(this)">
+    <img src='img/gallery/ViewOfGrandBasin_thum.jpg' alt='View of Grand Basin'/>
+
+  
+         </div>
       </div>
-      <div id ="quizContent" class ="hidden">
+      <!--  <div class = "span2"></div> -->
+    </div>
+
+      <div id ="quizContent" class ="hidden content">
         <div id="quizArea"></div>
       </div>
     </div>
    
   </div>
-      <!-- <div id ="mapContent" class ="hidden">
-        <p>Super map</p>
-      </div> -->
+      <div id ="mapContent" class ="hidden content">
+         <div class = "span8">
+      <div style="text-align:center; width:959px; margin-left:auto; margin-right:auto;">
+<img id="Image-Maps_4201303211331128" "birdsEyeView" src="img/birdsEyeViewMap.jpg" usemap="#Image-Maps_4201303211331128" border="0" width="959" height="734" alt="" />
+<map id="_Image-Maps_4201303211331128" name="Image-Maps_4201303211331128">
 
 
-
-<div class ="row-fluid">
- <div class = "span12">
-
-<!-- <div id="quizArea"></div> -->
-
-    <!-- <div id ="mainContentFrame"> -->
-     <!--  <div id ="historyContent" class="hidden">
-        <p>Blah blah</p>
-      </div></div> -->
-    
- <!--  </div> -->
+<area shape="poly" coords="29,182,65,284,87,282,100,309,176,293,101,163,41,164,43,178," href="http://www.image-maps.com/" alt="Building" title="Building"   />
 
 
- </div>
- <div class ="span1"></div>
-   
-  </div>
-  
-<!-- </div> -->
+<area shape="poly" coords="126,374,74,386,104,489,163,473,173,491,275,466,206,330,180,337,145,353,128,359," href="http://www.image-maps.com/" alt="" title=""   />
+<area shape="poly" coords="269,475,288,519,431,476,408,432,379,442,370,458,330,471,322,462,318,469,313,478,299,462," href="http://www.image-maps.com/" alt="" title=""   />
+<area shape="poly" coords="290,329,372,436,649,357,648,335,597,303,599,293,569,273,556,275,548,265,457,282,449,270,422,279,426,285,299,308," href="http://www.image-maps.com/" alt="" title=""   />
+<area shape="poly" coords="220,238,256,288,384,266,378,241,353,215,337,215,301,217,290,202,275,207,277,220,237,223,222,223," href="http://www.image-maps.com/" alt="" title=""   />
+<area shape="poly" coords="600,291,644,333,722,309,687,274,670,278,662,260,657,244,649,258,642,276," href="img/gallery/electricityBuilding" alt="" title=""   />
+<area shape="poly" coords="387,233,432,253,459,257,481,252,487,239,504,237,521,243,541,242,546,231,574,239,585,233,603,238,616,235,620,218,606,202,578,193,565,199,528,188,508,194,483,197,454,197,435,196,416,200,407,194,381,200,375,218," href="http://www.image-maps.com/" alt="" title=""   />
+<area shape="poly" coords="712,174,774,216,814,208,861,228,884,220,859,200,835,206,799,181,790,169,776,174,768,160,749,166,760,151,736,138,713,143,730,159,712,168," href="http://www.image-maps.com/" alt="" title=""   />
+<area shape="poly" coords="346,141,371,174,490,160,471,133,455,134,376,140," href="http://www.image-maps.com/" alt="" title=""   />
+<area shape="poly" coords="409,48,408,61,422,67,428,59,429,46,415,43," href="http://www.image-maps.com/" alt="" title=""   />
 
-<!-- </div>  --><!--hero unit-->
-
-</div> <!--end hero unit-->
-
-
-
-<div class ="row-fluid">
-<div class = "span12">
- <div id = "map">
-<img id ="birdsEyeViewMap" 
-src="img/birdsEyeViewMap.png" width="959" height="734" alt="Insert Alt" usemap="#image_map" border="0">
-
-<map name="wcw_image_map" id="wce_birdseye_map">
-  <area shape="poly" name ="buildingA" coords=" 295,329, 373,434, 522,393, 648,354, 595,306, 595,295, 585,283, 572,287, 555,275, 546,266, 455,283, 446,275, 426,280, 429,287, 314,314, 308,307, 295,310, 296,328" alt="red hotspot"/>
-  <area shape="poly" name ="buildingB" coords=" 73,399, 105,484, 164,475, 174,491, 272,465, 274,440, 243,395, 215,343, 181,338, 146,351, 127,360, 127,373, 76,384, 75,397" alt="green hotspot"/>
-  <area shape="poly" name ="buildingC" coords=" 268,481, 288,520, 429,473, 413,434, 387,439, 379,448, 367,459, 354,461, 348,466, 330,471, 329,468, 314,467, 314,476, 301,460, 272,469, 268,480" alt="purple hotspot"/>
+<area shape="rect" coords="957,732,959,734" href="http://www.image-maps.com/index.php?aff=mapped_users_4201303211331128" alt="Image Map" title="Image Map" />
 </map>
 </div>
 
- <h2>Architecture</h2>
+      </div>
+      <div class ="span4"></div>
+    </div>
+
+
+
+
+
+
+
  
- <div class="highslide-gallery" style="width: 600px; margin: auto">
-<!--
-  4) This is how you mark up the thumbnail images with an anchor tag around it.
-  The anchor's href attribute defines the URL of the full-size image. Given the captionEval
-  option is set to 'this.img.alt', the caption is grabbed from the alt attribute of
-  the thumbnail image.
--->
-  <a class='highslide' href='img/00104022.jpg' onclick="return hs.expand(this)">
-    <img src='images/thumbstrip01.thumb.png' alt='Mountain valley'/></a>
 
-  <a class='highslide' href='images/thumbstrip02.jpg' onclick="return hs.expand(this)">
-    <img src='images/thumbstrip02.thumb.png' alt='Windy landscape'/></a>
 
-  <a class='highslide' href='images/thumbstrip03.jpg' onclick="return hs.expand(this)">
-    <img src='images/thumbstrip03.thumb.png' alt='Sunset in the mountain'/></a>
 
-  <a class='highslide' href='images/thumbstrip04.jpg' onclick="return hs.expand(this)">
-    <img src='images/thumbstrip04.thumb.png' alt='Resting skier'/></a>
 
-  <!-- <a class='highslide' href='images/thumbstrip05.jpg' onclick="return hs.expand(this)">
-    <img src='images/thumbstrip05.thumb.png' alt='Contemplating dog'/></a> -->
-</div>
-  </div>
-  
-</div><!--row-fluid--> 
-
-<!-- <div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="#">Title</a>
-    <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
-  </div>
-</div> -->
  <div class="navbar navbar-fixed-bottom">
         <div class="navbar-inner">
         <div class="container">
@@ -180,12 +221,14 @@ src="img/birdsEyeViewMap.png" width="959" height="734" alt="Insert Alt" usemap="
 </div> <!--end container div-->
 
  <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+<script src="js/jquery.joyride-2.0.3.js"></script>
 <script type="text/javascript" src="js/jQuizMe-2.2.1.js"></script>
 <script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-modal.js"></script> 
 <script type="text/javascript" src="js/highslide-full.js"></script>
-<script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+
 <script type="text/javascript" src="js/wce.js"></script>
 
 

@@ -5,12 +5,12 @@
 * @date 10/09/2012
 */	
 .quiz-el{
-	background: black;
+	background: transparent;
 	font-size: 1.1em;
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 	position: relative;
 	padding: 0.2em;
-	width: 17em;
+	width: 100%;
 }
 .quiz-el div{
 	padding: 0.2em;
@@ -20,7 +20,7 @@
 }
 /* .q-innerArea = .q-header, .q-help, .q-prob, .q-intro, .q-gameOver */
 .q-innerArea{
-	background: gray;
+	background: transparent;
 	position:relative;
 	clear: both;
 	color: black;
