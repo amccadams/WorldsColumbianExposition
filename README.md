@@ -47,7 +47,7 @@ Phase One (Complete)
 Lay out basic structure of app in bootstrap.
 Research jquery plugins for quiz, photo gallery and image map
 
-Phase Two (
+Phase Two 
 Implememnt plugins and debug
 Currently working on creating a new quiz and replacing the jQuery plugin quiz.
 
