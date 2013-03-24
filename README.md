@@ -7,8 +7,8 @@ Features my app will/can include are:
 Image gallery with explanations of the image content 
 I will probably choose 3-5 different parts to focus images on from the following topics:
   new inventions
-      Pabst Blue Ribbon
-      Juicy Fruit
+     - Pabst Blue Ribbon
+     -Juicy Fruit
       spray painting
       ferris wheel
       architecture of fair
