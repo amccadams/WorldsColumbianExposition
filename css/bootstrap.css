@@ -6120,6 +6120,7 @@ a.badge:focus {
   line-height: 30px;
   color: brown;
   background-image: url('../img/seamlesstexture5_500.jpg');
+
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
